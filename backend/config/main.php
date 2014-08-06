@@ -26,6 +26,12 @@ return [
                 ],
             ],
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'rules' => [
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'post'],
+            ],
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],

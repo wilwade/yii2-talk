@@ -8,19 +8,12 @@ use common\models\PostSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-//Basic REST
-use yii\rest\ActiveController;
 
 /**
  * PostController implements the CRUD actions for Post model.
  */
 class PostController extends Controller
 {
-
-    /**
-    * REST model.
-    */
-    public $modelClass = 'common\models\Post';
 
     public function behaviors()
     {

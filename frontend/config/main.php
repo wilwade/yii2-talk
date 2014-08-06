@@ -29,11 +29,9 @@ return [
             'errorAction' => 'site/error',
         ],
         'urlManager' => [
-            'enablePrettyUrl' => false,
-            'enableStrictParsing' => true,
-            'showScriptName' => true,
+            'enablePrettyUrl' => true,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'post'],
+                'p' => 'post/index',
             ],
         ],
     ],
