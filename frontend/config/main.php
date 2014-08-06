@@ -28,6 +28,14 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => false,
+            'enableStrictParsing' => true,
+            'showScriptName' => true,
+            'rules' => [
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'post'],
+            ],
+        ],
     ],
     'params' => $params,
 ];
